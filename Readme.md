@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юля Гуменная](https://up.htmlacademy.ru/adaptive/11/user/269089).
-* Наставник: `Неизвестно`.
+* Наставник: Степан Нарышков.
 
 ---
 
