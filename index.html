@@ -2,11 +2,73 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+
+    <title>HTML Academy: Pink</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+  	<header class="page-header">
+  		<h1 class="page-header__title">Приложение Pink</h1>
+  		<div class="page-header__logo">
+  			<img src="http://placehold.it/150x100" alt="Pink">
+  		</div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  		<div class="page-header__background">
+  			<img src="http://placehold.it/320x460" alt="Phone-in-the-hand">
+  		</div>
+
+  		<nav class="main-nav"> <!--main-nav--open - для открытого состояния меню -->
+  			<span class="main-nav__toggler"><span></span></span>
+  			<div class="main-nav__wrapper">
+  				<ul class="main-nav__list">
+  					<li class="main-nav__item"><a>Главная</a></li>
+  					<li class="main-nav__item"><a href="">Фотографии</a></li>
+  					<li class="main-nav__item"><a href="">Конкурс</a></li>
+  					<li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
+  				</ul>
+  			</div>
+  		</nav>
+  	</header>
+
+  	<section class="app-download">
+  		<a class="app-download	btn" href="">Скачать приложение</a>
+
+  		<div class="app-download__img-os">
+  			<img src="http://placehold.it/100x100" alt="Apple">
+  			<img src="http://placehold.it/100x100" alt="Android">
+  			<img src="http://placehold.it/100x100" alt="Windows">
+  		</div>
+
+  		<p class="app-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  	</section>
+
+  	<section class="advantages">
+  		<div class="advantages__titles">
+  			<h2 class="advantages__title-one">Устали от серости мегаполиса?</h2>
+  			<h2 class="advantages__title-two">Нам есть, что вам предложить!</h2>
+  		</div>
+
+  		<div class="advantages__list">
+  			<div class="advantages__item advantages__item--mood">
+  				<h3 class="advantages__item-title"></h3>
+  				<p class="advantages__item-descr"></p>
+  			</div>
+  			<div class="advantages__item advantages__item--world">
+  				<h3 class="advantages__item-title"></h3>
+  				<p class="advantages__item-descr"></p>
+  			</div>
+  			<div class="advantages__item advantages__item--friends">
+  				<h3 class="advantages__item-title"></h3>
+  				<p class="advantages__item-descr"></p>
+  			</div>
+  		</div>
+
+  		<div class="advantages__img-phone">
+  			<img src="http://placehold.it/100x100" alt="Phone">
+  		</div>
+  	</section>
 
   </body>
 </html>
