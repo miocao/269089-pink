@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML Academy: Pink</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+  	<header class="page-header">
+  		<h1 class="page-header__title">Приложение Pink</h1>
+  		<div class="page-header__logo">
+  			<img src="http://placehold.it/150x100" alt="Pink">
+  		</div>
+
+  		<div class="page-header__background">
+  			<div class="page-header__text"> Конкурс на самое безбашенное путешествие с Пинк
+  			</div>
+  			<div class="page-header__image">
+  				<img src="http://placehold.it/320x460" alt="Phone-in-the-hand">
+  			</div>
+  		</div>
+
+  		<nav class="main-nav--open"> 
+  			<span class="main-nav__toggler"><span></span></span>
+  			<div class="main-nav__wrapper">
+  				<ul class="main-nav__list">
+  					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+  					<li class="main-nav__item"><a href="">Фотографии</a></li>
+  					<li class="main-nav__item"><a href="">Конкурс</a></li>
+  					<li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
+  				</ul>
+  			</div>
+  		</nav>
+  	</header>
+
+  	<section class="competition">
+  		<div class="competition__wrapper">
+  			<p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+  			<form action="/echo" method="post">
+  				<div class="competition__person-name">
+	                <label for="surname">Фамилия</label> 
+	                <input type="text" id="surname" name="surname" value="Укажите фамилию *">
+	                <label for="name">Имя</label> 
+	                <input type="text" id="name" name="name" value="Укажите имя *">
+	                <label for="fathername">Отчество</label> 
+	                <input type="text" id="fathername" name="fathername" value="Ну и отчество тоже">
+	            </div>
+
+	            <div class="competition__achievements">
+	            	<p class="competition__achievements-title">Ваши безбашенные достижения в путешествии</p>
+        			<input type="checkbox" name="option-1" id="selfie" checked>
+        			<label for="selfie">Сделал селфи с акулой</label>
+        			<input type="checkbox" name="option-2" id="beach" checked>
+        			<label for="beach">Обгорел на пляже</label>
+        			<input type="checkbox" name="option-3" id="norris">
+        			<label for="norris">Видел Чака Норриса</label>
+        			<input type="checkbox" name="option-4" id="souvenirs">
+        			<label for="souvenirs">Накупил сувениров</label>
+        			<input type="checkbox" name="option-5" id="tower" checked>
+        			<label for="tower">Удержал башню</label>
+        			<input type="checkbox" name="option-6" id="hotel">
+        			<label for="hotel">Разгромил отель</label>
+	            </div>
+
+	            <div class="competition__contacts">
+	            	<label for="number">Номер телефона</label> 
+	                <input type="text" id="number" name="number" value="Номер, пожалуйста">
+	                <label for="mail">Адрес почты</label> 
+	                <input type="text" id="mail" name="mail" value="Введите почту *">
+	            </div>
+
+	            <div class="competition__travel-app">
+	            	<p class="competition__travel-app-title">С каким приложением путешествовали?</p>
+	            	<input type="radio" name="ios" id="ios">
+                    <label for="ios">Pink для IOS</label>
+                    <input type="radio" name="android" id="android">
+                    <label for="android">Pink на Android</label>
+                    <input type="radio" name="windows" id="windows">
+                    <label for="windows">Windows Phone</label>
+	            </div>
+
+	            <div class="competition__emotions">
+	            	<label for="emotions">Опишите свои эмоции</label> 
+	                <input type="text" id="emotions" name="emotions" value="Можно прям в красках, не стесняясь в выражениях">
+	            </div>
+
+	            <div class="competition__btn">
+            		<input type="submit" value="Отправить форму">
+        		</div>
+
+        		<small class="competition__necessary"><sup>*</sup> — Обязательные поля</small>
+            </form>
+  		</div>
+  	</section>
+
+  	<footer class="page-footer">
+  		<div class="page-footer__wrapper">
+
+		      	<section class="page-footer__logo">
+		          <img src="http://placehold.it/100x100" alt="Logo">
+		        </section>
+
+		        <section class="page-footer__social-btn">
+		          <a class="page-footer__btn-item page-footer__btn-item--tw" href="#"></a>
+		          <a class="page-footer__btn-item page-footer__btn-item--fb" href="#"></a>
+		          <a class="page-footer__btn-item page-footer__btn-item--yt" href="#"></a>
+		        </section>
+
+		        <section class="page-footer__copyright">
+		          <div class="page-footer__copyright-web"><p>Разработано</p></div>
+		          <a class="page-footer__copyright-btn" href="https://htmlacademy.ru">
+		          	<img src="http://placehold.it/100x100" alt="htmlacademy.ru">
+		          </a>
+		        </section>
+		    </div>
+
+  		</div>
+  	</footer>
+  </body>
+</html>
