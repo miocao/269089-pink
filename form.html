@@ -10,50 +10,50 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="logo header-logo" href="index.html">
-          <img src="http://placehold.it/50x50" alt="Pink">
-        </a>
-        <nav class="main-nav"> 
-          <button class="main-nav__toggler"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__item">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item" href="">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item" href="">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item" href="">HTML ACADEMY</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="navigation navigation__photo">
+          <a class="logo header-logo" href="index.html"></a>
+          <nav class="main-nav"> 
+            <button class="main-nav__toggler"></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__item">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item" href="">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item" href="">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item" href="">HTML ACADEMY</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
+      <section class="page-banner__photo">
+        <div class="page-banner__view--short"></div>
+        <h2 class="page-banner__text">Конкурс на самое<br>безбашенное<br>путешествие с Пинк</h2>
+      </section>
     </header>
-
-    <section class="page-banner">
-        <div class="page-banner__text"> Конкурс на самое безбашенное путешествие с Пинк </div>
-    </section>
 
     <main>
       <section class="competition">
         <div class="container">
-          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="form-title">Поделитесь своей историей и получите<br>шанс выиграть ценный приз — 1000<br>миль на вашу бонусную карту!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="competition__person-name">
               <label for="surname">Фамилия</label> 
               <input type="text" id="surname" name="surname" value="Укажите фамилию *">
               <label for="name">Имя</label> 
-              <input type="text" id="name" name="name" value="Укажите имя *">
+              <input type="text" id="name" name="name" value="Введите ваше имя *">
               <label for="fathername">Отчество</label> 
               <input type="text" id="fathername" name="fathername" value="Ну и отчество тоже">
             </fieldset>
             <fieldset class="competition__achievements">
-              <legend class="competition__achievements-title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="competition__achievements-title">Ваши безбашенные<br>достижения в путешествии</div>
               <input type="checkbox" name="option-1" id="selfie" checked>
               <label for="selfie">Сделал селфи с акулой</label>
               <input type="checkbox" name="option-2" id="beach" checked>
@@ -74,7 +74,7 @@
               <input type="text" id="mail" name="mail" value="Введите почту *">
             </fieldset>
             <fieldset class="competition__travel-app">
-              <legend class="competition__travel-app-title">С каким приложением путешествовали?</legend>
+              <div class="competition__travel-app-title">С каким приложением путешествовали?</div>
               <input type="radio" name="ios" id="ios">
               <label for="ios">Pink для IOS</label>
               <input type="radio" name="android" id="android">
@@ -83,35 +83,31 @@
               <label for="windows">Windows Phone </label>
             </fieldset>
             <fieldset class="competition__comment">
-              <label for="comment">Опишите свои эмоции</label> 
+              <label class="competition__comment-title" for="comment">Опишите свои эмоции</label> 
               <textarea id="comment" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
               <input type="submit" value="Отправить форму">
             </fieldset>
-            <small class="competition__required-fields">
+            <div class="competition__required-fields">
               <sup>*</sup> — Обязательные поля
-            </small>
+            </div>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer__photo">
       <div class="container">
-        <a class="logo footer-logo" href="index.html">
-          <img src="http://placehold.it/50x50" alt="Pink">
-        </a>
+        <div class="footer-logo">
+          <a href="index.html"></a>
+        </div>
         <section class="page-footer__social-btn">
           <a class="page-footer__btn-item page-footer__btn-item--tw" href="#"></a>
           <a class="page-footer__btn-item page-footer__btn-item--fb" href="#"></a>
           <a class="page-footer__btn-item page-footer__btn-item--yt" href="#"></a>
         </section>
         <section class="page-footer__copyright">
-          <div class="page-footer__copyright-web">
-            <p>Разработано</p>
-          </div>
-          <a class="page-footer__copyright-btn" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="http://placehold.it/100x100" alt="htmlacademy.ru">
-          </a>
+          <p class="page-footer__copyright-item page-footer__copyright-title">Разработано</p>
+          <a class="page-footer__copyright-item page-footer__copyright-btn" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </section>
       </div>
     </footer>
