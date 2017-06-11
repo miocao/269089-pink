@@ -1,0 +1,149 @@
+.title() {
+	text-transform: uppercase;
+	font-family: @font;
+	font-size: 14px;
+	color: @bg-color-red;
+}
+
+.text() {
+	font-family: @font;
+	font-size: 18px;
+}
+
+.form-title {
+	.text-center;
+	padding-top: 45px;
+	padding-bottom: 33px;
+	line-height: 30px;
+}
+
+fieldset {
+	border: none;
+}
+
+.competition__person-name {
+	margin-bottom: 10px;
+}
+
+.competition__person-name label {
+	margin-left: 28px;
+	margin-bottom: 20px;
+	.title;
+}
+
+input[type="text"] {
+	.inline-block;
+	padding: 18px 21px;
+	width: 235px;
+	margin-left: 6px;
+	margin-top: 11px;
+	margin-bottom: 23px;
+	background: none;
+	border: 1px solid @bg-color-grey;
+	.text;
+}
+
+.competition__achievements {
+	display: block;
+	background-color: @bg-color-grey;
+	padding: 36px 30px;
+	margin-bottom: 32px;
+}
+
+.competition__achievements-title {
+	.title;
+	.text-center;
+	margin-bottom: 46px;
+
+}
+
+.competition__achievements label {
+	float: left;
+	.text;
+	margin-bottom: 58px;
+	padding-left: 56px;
+}
+
+.competition__achievements label:last-child {
+	margin-bottom: 14px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+.competition__contacts {
+	margin-bottom: 10px;
+}
+
+.competition__contacts label{
+	.title;
+	margin-left: 30px;
+}
+
+.competition__travel-app {
+	display: block;
+	background: @bg-color-grey;
+	padding: 37px 30px;
+	margin-bottom: 31px;
+}
+
+.competition__travel-app-title {
+	.title;
+	.text-center;
+	margin-bottom: 41px;
+}
+
+.competition__travel-app label {
+	float: left;
+	.text;
+	margin-bottom: 51px;
+	padding-left: 58px;
+}
+
+.competition__travel-app label:last-child {
+	margin-bottom: 13px;
+}
+
+.competition__comment-title {
+	.title;
+	.text-center;
+	margin-left: 55px;
+}
+
+textarea {
+	border: 2px solid @bg-color-grey;
+	width: 272px;
+	height: 193px;
+	margin-left: 7px;
+	margin-top: 16px;
+	margin-bottom: 44px;
+}
+
+.competition__comment input[type="submit"] {
+	background-color: #2aab6d;
+	border: none;
+	border-radius: 2px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-left: 7px;
+	width: 280px;
+	height: 63px;
+	margin-bottom: 30px;
+}
+
+.competition__required-fields {
+	.title;
+	color: @bg-color-blue;
+	margin-left: 70px;
+	margin-bottom: 61px;
+}
+
+.competition__required-fields sup {
+	color: @bg-color-red;
+	font-size: 14px;
+	line-height: 10px;
+}
+
+
