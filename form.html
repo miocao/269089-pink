@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Pink
     </title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -33,11 +32,12 @@
           </nav>
         </div>
       </div>
-      <section class="page-banner__photo">
-        <div class="page-banner__view--short"></div>
-        <h2 class="page-banner__text">Конкурс на самое<br>безбашенное<br>путешествие с Пинк</h2>
-      </section>
     </header>
+
+    <section class="page-banner__photo">
+      <div class="page-banner__view--short"></div>
+      <h2 class="page-banner__text">Конкурс на самое<br>безбашенное<br>путешествие с Пинк</h2>
+    </section>
 
     <main>
       <section class="competition">
@@ -46,46 +46,46 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="competition__person-name">
               <label for="surname">Фамилия</label> 
-              <input type="text" id="surname" name="surname" value="Укажите фамилию *">
+              <input class="competition__person-data" type="text" id="surname" name="surname" value="Укажите фамилию *">
               <label for="name">Имя</label> 
-              <input type="text" id="name" name="name" value="Введите ваше имя *">
+              <input class="competition__person-data" type="text" id="name" name="name" value="Введите ваше имя *">
               <label for="fathername">Отчество</label> 
-              <input type="text" id="fathername" name="fathername" value="Ну и отчество тоже">
+              <input class="competition__person-data" type="text" id="fathername" name="fathername" value="Ну и отчество тоже">
             </fieldset>
             <fieldset class="competition__achievements">
               <div class="competition__achievements-title">Ваши безбашенные<br>достижения в путешествии</div>
-              <input type="checkbox" name="option-1" id="selfie" checked>
+              <input class="competition__achievements-item" type="checkbox" name="option-1" id="selfie" checked>
               <label for="selfie">Сделал селфи с акулой</label>
-              <input type="checkbox" name="option-2" id="beach" checked>
+              <input class="competition__achievements-item" type="checkbox" name="option-2" id="beach" checked>
               <label for="beach">Обгорел на пляже</label>
-              <input type="checkbox" name="option-3" id="norris">
+              <input class="competition__achievements-item" type="checkbox" name="option-3" id="norris">
               <label for="norris">Видел Чака Норриса</label>
-              <input type="checkbox" name="option-4" id="souvenirs">
+              <input class="competition__achievements-item" type="checkbox" name="option-4" id="souvenirs">
               <label for="souvenirs">Накупил сувениров</label>
-              <input type="checkbox" name="option-5" id="tower" checked>
+              <input class="competition__achievements-item" type="checkbox" name="option-5" id="tower" checked>
               <label for="tower">Удержал башню</label>
-              <input type="checkbox" name="option-6" id="hotel">
+              <input class="competition__achievements-item" type="checkbox" name="option-6" id="hotel">
               <label for="hotel">Разгромил отель</label>
             </fieldset>
             <fieldset class="competition__contacts">
               <label for="number">Номер телефона</label> 
-              <input type="text" id="number" name="number" value="Номер, пожалуйста">
+              <input class="competition__person-data" type="text" id="number" name="number" value="Номер, пожалуйста">
               <label for="mail">Адрес почты</label> 
-              <input type="text" id="mail" name="mail" value="Введите почту *">
+              <input class="competition__person-data" type="text" id="mail" name="mail" value="Введите почту *">
             </fieldset>
             <fieldset class="competition__travel-app">
               <div class="competition__travel-app-title">С каким приложением путешествовали?</div>
-              <input type="radio" name="ios" id="ios">
+              <input class="competition__travel-app-item" type="radio" name="ios" id="ios">
               <label for="ios">Pink для IOS</label>
-              <input type="radio" name="android" id="android">
+              <input class="competition__travel-app-item" type="radio" name="android" id="android">
               <label for="android">Pink на Android</label>
-              <input type="radio" name="windows" id="windows">
+              <input class="competition__travel-app-item" type="radio" name="windows" id="windows">
               <label for="windows">Windows Phone </label>
             </fieldset>
             <fieldset class="competition__comment">
               <label class="competition__comment-title" for="comment">Опишите свои эмоции</label> 
-              <textarea id="comment" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
-              <input type="submit" value="Отправить форму">
+              <textarea class="competition__comment-item" id="comment" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <input class="competition__comment-btn" type="submit" value="Отправить форму">
             </fieldset>
             <div class="competition__required-fields">
               <sup>*</sup> — Обязательные поля

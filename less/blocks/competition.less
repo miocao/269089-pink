@@ -1,12 +1,12 @@
 .title() {
 	text-transform: uppercase;
-	font-family: @font;
+	.font;
 	font-size: 14px;
 	color: @bg-color-red;
 }
 
 .text() {
-	font-family: @font;
+	.font;
 	font-size: 18px;
 }
 
@@ -31,7 +31,7 @@ fieldset {
 	.title;
 }
 
-input[type="text"] {
+input[class="competition__person-data"] {
 	.inline-block;
 	padding: 18px 21px;
 	width: 235px;
@@ -46,30 +46,31 @@ input[type="text"] {
 .competition__achievements {
 	display: block;
 	background-color: @bg-color-grey;
-	padding: 36px 30px;
+	padding: 36px 0;
+	padding-top: 36px;
+	padding-bottom: 21px;
 	margin-bottom: 32px;
 }
 
 .competition__achievements-title {
 	.title;
 	.text-center;
-	margin-bottom: 46px;
-
+	margin-bottom: 17px;
 }
 
 .competition__achievements label {
-	float: left;
 	.text;
 	margin-bottom: 58px;
-	padding-left: 56px;
+	padding-left: 88px;
+	line-height: 82px;
 }
 
 .competition__achievements label:last-child {
 	margin-bottom: 14px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[class="competition__achievements-item"],
+input[class="competition__travel-app-item"] {
 	display: none;
 }
 
@@ -86,20 +87,20 @@ input[type="radio"] {
 	display: block;
 	background: @bg-color-grey;
 	padding: 37px 30px;
+	padding-bottom: 24px;
 	margin-bottom: 31px;
 }
 
 .competition__travel-app-title {
 	.title;
 	.text-center;
-	margin-bottom: 41px;
+	margin-bottom: 16px;
 }
 
 .competition__travel-app label {
-	float: left;
 	.text;
-	margin-bottom: 51px;
 	padding-left: 58px;
+	line-height: 75px;
 }
 
 .competition__travel-app label:last-child {
@@ -112,7 +113,7 @@ input[type="radio"] {
 	margin-left: 55px;
 }
 
-textarea {
+.competition__comment-item {
 	border: 2px solid @bg-color-grey;
 	width: 272px;
 	height: 193px;
@@ -121,7 +122,7 @@ textarea {
 	margin-bottom: 44px;
 }
 
-.competition__comment input[type="submit"] {
+input[class="competition__comment-btn"] {
 	background-color: #2aab6d;
 	border: none;
 	border-radius: 2px;
