@@ -1,38 +1,49 @@
+.page-banner {
+    .abs;
+    top: 0;
+    height: 462px;
+    background-color: yellow;
+    opacity: 0.9;
+}
+
 .page-banner__view {
-	.abs;
+	  .abs;
     left: 0;
     top: 0;
-    right: 0;
-    margin: auto;
     width: 320px;
     height: 462px;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 30%;
+    /*background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 30%;*/
+    z-index: 50;
+    background-color: red;
+    opacity: 0.6;
 }
 
 .page-banner__phone {
-	.abs;
-    right: 30px;
+	  .abs;
     top: 176px;
-    margin: auto;
-    width: 100%;
+    width: 260px;
     height: 286px;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 0%;
+    /*background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 0%;*/
+    z-index: 100;
+    background-color: blue;
+    opacity: 0.6;
 }
 
 .page-banner__photo {
+    .rel;
     min-height: 171px;
-    margin-bottom: 45px;
+    margin-bottom: 111px;
+    margin-top: -66px;
 }
 
 .page-banner__view--short {
     .abs;
     left: 0px;
-    right: 0px;
     top: 0px;
     margin: auto;
     width: 320px;
     height: 237px;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+   /* background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;*/
     z-index: 0;
 }
 
@@ -40,7 +51,69 @@
     .abs;
     .text-center;
     top: 79px;
-    right: 0;
     left: 0;
+    right: 0;
     color: #ffffff;
+}
+
+@media @tablet-widths {
+    .page-banner,
+    .page-banner__view  {
+      width: 660px;
+      height: 730px;
+    }
+
+    .page-banner__phone {
+      top: 182px;
+      right: 24px;
+      width: 470px;
+      height: 548px;
+    }
+
+    .page-banner__photo {
+      margin-bottom: 361px;
+      margin-top: -110px;
+    }
+
+    .page-banner__view--short {
+      background-color: yellow;
+      opacity: 0.6;
+      width: 660px;
+      height: 440px;
+    }
+
+    .page-banner__text {
+      top: 138px;
+    }
+}
+
+@media @desktop-widths {
+    .page-banner,
+    .page-banner__view {
+      width: 1200px;
+      height: 854px;
+    }
+
+    .page-banner__phone {
+      top: 209px;
+      right: 170px;
+      width: 555px;
+      height: 645px;
+    }
+
+    .page-banner__photo {
+      margin-bottom: 315px;
+      margin-top: -110px;
+    }
+
+    .page-banner__view--short {
+      background-color: yellow;
+      opacity: 0.6;
+      width: 1200px;
+      height: 394px;
+    }
+
+    .page-banner__text {
+      top: 131px;
+    }
 }

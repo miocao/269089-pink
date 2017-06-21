@@ -18,3 +18,46 @@
 	font-family: "Open Sans", "Arial", sans-serif;
     src: url(fonts/opensans.woff);
 }
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    width: 320px;
+	/*background: url("../img/pink-photo-mobile.jpg") no-repeat 0% 0;*/
+}
+
+@media @tablet-widths {
+  body {
+    /*background: url("../img/pink-photo-tablet.jpg") no-repeat 0% 0px;*/
+  }
+}
+
+@media @desktop-widths {
+  body {
+    /*background: url("../img/pink-photo-desktop.jpg") no-repeat 0% 0px;*/
+  }
+}
+
+.container {
+	width: auto;
+	padding: 0 20px;
+
+	@media @tablet-widths {
+      width: 620px;
+    }
+
+    @media @desktop-widths {
+      width: 940px;
+      padding: 0 130px;
+    }
+}
+

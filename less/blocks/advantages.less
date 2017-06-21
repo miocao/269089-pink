@@ -1,21 +1,29 @@
+.advantages {
+	.rel;
+	height: 983px;
+	background-color: blue;
+	opacity: 0.6;
+}
+
 .advantages__title__main {
-	margin-bottom: 26px;
+	margin-bottom: 32px;
 }
 
 .advantages__title {
 	.text-center;
-	background: @bg-color-white;
 }
 
 .advantages__list {
 	.rel;
 	padding-top: 70px;
 	padding-bottom: 281px;
+	padding-right: 20px;
+	padding-left: 20px;
 	background: @bg-color-grey;
 }
 
 .advantages__title--question {
-	margin-top: 67px;
+	padding-top: 22px;
 	margin-bottom: 31px;
 }
 
@@ -24,7 +32,7 @@
 }
 
 .advantages__item:last-child {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .advantages__item-title,
@@ -35,10 +43,117 @@
 .advantages__image {
 	.abs;
 	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+	left: 82px;
 	width: 157px;
 	height: 278px;
 	background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 0;
+}
+
+.advantages__24-hours {
+	display: none;
+}
+
+@media @tablet-widths {
+	.advantages {
+	 	width: 660px;
+	 	height: 1033px;
+	}
+
+	.advantages__title__main {
+		margin-bottom: 45px;
+	}
+
+	.advantages__title--question {
+	  margin-top: 26px;
+	  margin-bottom: -33px;
+	}
+
+	.advantages__list {
+	  padding-top: 64px;
+	  padding-bottom: 3px;
+	  background: @bg-color-grey;
+ 	}
+
+ 	.advantages__item {
+ 		margin-left: 309px;
+ 		width: 320px;
+ 	    background-color: green;
+		opacity: 0.6;
+		margin-bottom: 40px;
+ 	}
+
+ 	.advantages__item-title,
+	.advantages__item-descr {
+		text-align: left;
+	}
+	.advantages__image {
+		left: 20px;
+	}
+
+	.advantages__24-hours {
+		.abs;
+		display: block;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 276px;
+		width: 620px;
+		background-color: yellow;
+		opacity: 0.5;
+	}
+}
+
+@media @desktop-widths {
+	.advantages {
+	 	width: 1200px;
+	 	height: 1317px;
+	}
+
+	.advantages__title__main {
+		margin-bottom: 77px;
+	}
+
+	.advantages__title--question {
+	    margin-top: 44px;
+	    margin-bottom: -42px;
+	}
+
+	.advantages__list {
+		.container;
+	    padding-bottom: 3px;
+	    height: 1039px;
+	    background: @bg-color-grey;
+ 	}
+
+ 	.advantages__image {
+		display: none;
+	}
+
+ 	.advantages__item {
+ 		float: left;
+ 		margin-left: 15px;
+ 		margin-right: 20px;
+ 		height: 600px;
+ 		width: 280px;
+ 	    background-color: green;
+		opacity: 0.6;
+		margin-bottom: 40px;
+ 	}
+
+ 	.advantages__item:nth-child(3) {
+ 		margin-right: 0px;
+ 	}
+
+ 	.advantages__item-title,
+	.advantages__item-descr {
+		.text-center;
+	}
+	.advantages__24-hours {
+		bottom: 67px;
+		height: 346px;
+		width: 940px;
+		background-color: yellow;
+		opacity: 0.5;
+	}
 }

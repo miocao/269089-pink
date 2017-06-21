@@ -2,6 +2,8 @@
 @bg-color-grey: #f2f2f2;
 @bg-color-white: #ffffff;
 @bg-color-red: #d22856;
+@tablet-widths: ~"(min-width: 660px)";
+@desktop-widths: ~"(min-width: 1200px)";
 
 .app-download h3,
 .advantages h3,
@@ -19,6 +21,14 @@
 	padding: 0;
 }
 
+.advantages h3 {
+	line-height: 12px;
+}
+
+.page-footer h3 {
+	line-height: 30px;
+}
+
 
 .app-download p, 
 .advantages p,
@@ -32,13 +42,6 @@
 	font-size: 14px;
     line-height: 24px;
     font-weight: normal;
-}
-
-.advantages h3 {
-	line-height: 12px;
-}
-
-.page-footer h3 {
 }
 
 .competition p {
@@ -69,24 +72,55 @@
     font-weight: lighter;
 }
 
+@media @tablet-widths {
+	.advantages h2,
+	.page-footer h2 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	.reviews p,
+	.form-title p,
+	.photos__title p,
+	.download-photo__title p {
+		font-size: 18px;
+	}
+
+	.reviews h3 {
+		font-size: 20px;
+	}
+
+	.page-footer li h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.page-banner__photo h2{
+		font-size: 50px;
+		line-height: 60px;
+	}
+	
+}
+
+@media @desktop-widths {
+	.page-footer__title h2,
+	.advantages h2 {
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.page-footer h3 {
+		line-height: 68px;
+	}
+}
+
 .prices h3,
 .prices p,
 .page-footer h3,
 .page-footer h2,
 .competition p,
 .page-footer__photo p,
-.photos p{
+.photos p {
 	margin: 0;
 	padding: 0;
-}
-
-.page-footer h3 {
-	line-height: 30px;
-}
-
-
-body {
-    width: 320px;
-	margin: 0 auto;
-	background: url("../img/pink-photo-mobile.jpg") no-repeat 50% 0;
 }

@@ -1,9 +1,11 @@
 .download-photo__block {
-	.rel;
-	width: 320px;
-	min-height: 738px;
-	padding-top: 20px;
+	width: 300px;
 	background-color: @bg-color-grey;
+	opacity: 0.6;
+	padding-top: 20px;
+	padding-left: 20px;
+	background-color: orange;
+	opacity: 0.6;
 }
 
 .download-photo__title {
@@ -12,8 +14,12 @@
 	margin-bottom: 42px;
 }
 
+.download-photo__text {
+	background-color: green;
+	opacity: 0.5;
+}
+
 .download-photo__your-image {
-	margin: 0 auto;
 	margin-bottom: 23px;
 	width: 280px;
 	height: 374px;
@@ -21,8 +27,10 @@
 }
 
 .download-photo__settings {
-	padding-left: 13px;
-	padding-bottom: 48px;
+	margin-left: -7px;
+	margin-bottom: 30px;
+	background-color: red;
+	opacity: 0.5;
 }
 
 .download-photo__settings ul {
@@ -36,13 +44,13 @@
 }
 
 .download-photo form {
-	margin-top: 39px;
+	margin-top: 88px;
+	padding-bottom: 28px;
 }
 
 input[class="download-photo__btn"] {
 	.inline-block;
 	background: none;
-	margin-left: 20px;
 	margin-bottom: 13px;
 	border: 2px solid @bg-color-red;
 	padding: 13px 0;
@@ -53,6 +61,78 @@ input[class="download-photo__btn"] {
     font-weight: bold;
     .font;
 }
+
+@media @tablet-widths { 
+	.download-photo__block {
+	  .clearfix;
+	  width: 640px;
+	  padding-top: 55px;
+	}
+
+	.download-photo__title {
+	  margin-top: 44px;
+	  margin-bottom: 72px;
+	}
+
+    .download-photo__your-image {
+      float: left;
+	  height: 400px;
+	  width: 300px;
+	  background-color: green;
+	  opacity: 0.6;
+	}
+
+	.download-photo__settings {
+	  float: left;
+	  width: 320px;
+	  margin-left: 0px;
+	  margin-bottom: 72px;
+	}
+
+	.download-photo__settings li {
+	  float: none;
+	}
+
+	input[class="download-photo__btn"] {
+		margin-left: 47px;
+		width: 260px;
+		margin-bottom: 26px;
+	}
+}
+
+@media @desktop-widths { 
+	.download-photo__block {
+	  .clearfix;
+	  width: 920px;
+	  padding-top: 58px;
+	  margin-left: 130px;
+	}
+
+	.download-photo__title {
+	  .text-center;
+	  margin-top: -13px;
+	  margin-bottom: 65px;
+	}
+
+	.download-photo__your-image {
+	  margin-left: 60px;
+	  margin-right: 60px;
+	}
+
+	.download-photo__settings {
+	  width: 440px;
+	  margin-bottom: 151px;
+	}
+
+	input[class="download-photo__btn"] {
+		margin-left: 29px;
+		width: 185px;
+		margin-bottom: 29px;
+		margin-right: 10px;
+	}
+}
+
+
 
 
 

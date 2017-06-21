@@ -2,6 +2,8 @@ p[class="photos__title-text"] {
 	.text-center;
 	padding-bottom: 47px;
 	line-height: 30px;
+	background-color: blue;
+	opacity: 0.6;
 }
 
 .photos__item-picture {
@@ -14,14 +16,20 @@ p[class="photos__title-text"] {
 	background: @bg-color-blue;
 }
 
+.photos__item:first-child {
+	.rel;
+	padding-top: 139px;
+}
+
 .photos__item-picture--width {
+	.abs;
+	left: -20px;
 	width: 320px;
 	height: 139px;
 }
 
 .photos__item-block {
 	background: @bg-color-grey;
-	margin: 0 20px;
 	padding: 17px;
 	margin-bottom: 20px;
 }
@@ -42,3 +50,110 @@ p[class="photos__title-text"] {
 	text-transform: uppercase;
 	color: @bg-color-red;
 }
+
+
+@media @tablet-widths {
+	.photos__title {
+	  padding: 0 50px;
+	  margin-bottom: 27px;
+	}
+
+	.photos__list {
+		.clearfix;
+	}
+
+	.photos__item {
+	  display: block;
+	  float: left;
+	  .rel;
+	  width: 300px;
+	  margin-right: 20px;
+	}
+
+	.photos__item-picture {
+	  height: 300px;
+	}
+
+	.photos__item-block {
+      background: @bg-color-red;
+	  opacity: 0.6;
+	  padding: 24px 27px;
+	  height: 107px;
+	}
+
+	.photos__item-block--width {
+		height: 75px;
+	}
+
+	.photos__item:first-child {
+	  .rel;
+	  padding-top: 510px;
+	  margin-bottom: 29px;
+	  width: 620px;
+	}
+
+	.photos__item:nth-child(2n+1) {
+		margin-right: 0px;
+	}
+
+	.photos__item-picture--width {
+	  width: 660px;
+	  height: 510px;
+	}
+
+	.photos__item-likes .photos__item-bth,
+	.photos__item-likes .photos__item-number {
+	  display: none;
+	}
+}
+
+@media @desktop-widths {  
+    .photos__title {
+	  padding: 0 150px;
+	  margin-bottom: 41px;
+	}
+
+	.photos__item-picture--width {
+	  left: -130px;
+	  width: 1200px;
+	}
+
+	.photos__item-block--width {
+		height: 75px;
+		width: 885px;
+	}
+
+	.photos__item:first-child {
+	  padding-top: 510px;
+	  width: 1140px;
+	}
+
+	.photos__item-block {
+      background: @bg-color-red;
+	  opacity: 0.6;
+	  padding: 24px 27px;
+	  height: 107px;
+	  margin-bottom: 54px;
+	}
+
+	.photos__item-block--width {
+		padding: 20px 27px;
+		height: 53px;
+		margin-bottom: 20px;
+	}
+
+	.photos__item-picture {
+	  height: 400px;
+	}
+
+	.photos__item:nth-child(4) {
+		margin-left: 20px;
+		margin-right: 0px;
+	}
+
+	.photos__item:nth-child(5) {
+		margin-right: 20px;
+	}
+	
+}
+

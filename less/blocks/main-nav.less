@@ -1,30 +1,71 @@
+@import "blocks/logo.less";
+
 .navigation {
 	.rel;
+	.clearfix();
 	background-color: rgba(29, 38, 50, 0.7);
 	min-height: 66px;
-	margin-bottom: 396px;
-    z-index: 100;
+    z-index: 300;
 }
 
-.navigation__photo {
-    margin-bottom: 0px;
+.logo {
+	.rel;
+	float: left;
+	width: 140px;
+	min-height: 66px;
+	background-color: green;
+	opacity: 0.6;
+}
+
+.main-nav {
+	.rel;
+	float: right;
+	width: 140px;
+	min-height: 66px;
+	z-index: 300;
+	background-color: yellow;
+	opacity: 0.6;
+}
+
+@media @tablet-widths {
+  .navigation {
+    position: relative;
+    min-height: 110px;
+  }
+
+  .logo {
+  	min-height: 110px;
+  	width: 150px;
+  }
+
+  .main-nav {
+    min-height: 110px;
+  	width: 148px;
+  }
+}
+
+@media @desktop-widths {
+	.main-nav {
+	  width: 620px;
+	}
+
+	.main-nav__toggler {
+	  display: none;
+	}
 }
 
 .main-nav__wrapper {
 	display: none;
 }
 
-.main-nav {
-	.abs;
-	right: 0px;
-	padding: 13px 18px;
-	padding-top: 22px;
-}
-
  .main-nav__toggler {
-	.inline-block;
-	width: 52px;
-	height: 30px;
+ 	.abs;
+ 	top: 0;
+ 	bottom: 0;
+ 	right: 0;
+ 	margin: auto;
+	width: 50px;
+	height: 24px;
 	border: none;
 	background: url("../img/icon-menu-burger.svg") no-repeat 0 0;
 }

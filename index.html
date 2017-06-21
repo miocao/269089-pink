@@ -7,29 +7,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="navigation">
-          <a class="logo header-logo" href=""></a>
-          <nav class="main-nav"> 
-            <button class="main-nav__toggler"></button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
-                  <a class="main-nav__item">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item" href="">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item" href="">Конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item" href="">HTML ACADEMY</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <div class="navigation container">
+        <div class="logo">
+          <a class="header-logo" href=""></a>
         </div>
+        <nav class="main-nav"> 
+          <button class="main-nav__toggler"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__item">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item" href="">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item" href="">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item" href="">HTML ACADEMY</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -40,49 +40,44 @@
   
     <main>
       <section class="app-download">
-      	<div class="container">
+        <div class="app-download__block container">
           <a class="app-download__btn" href="https://www.apple.com/itunes/"><h3>Скачать приложение</h3></a>
           <div class="app-download__brands">
             <a class="app-download__brands-item" href="https://www.apple.com"></a>
             <a class="app-download__brands-item" href="https://www.android.com"></a>
-            <a class="app-download__brands-item" href="https://www.microsoft.com"></a>
+            <a class="app-download__brands-item app-download__brands--microsoft" href="https://www.microsoft.com"></a>
           </div>
           <p class="app-download__text">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
 
       <section class="advantages">
-        <div class="container">
           <div class="advantages__title__main">
             <h2 class="advantages__title advantages__title--question"> Устали от серости мегаполиса?</h2>
-            <h2 class="advantages__title advantages__title--answer"> Нам есть, что вам предложить! </h2>
+            <h2 class="advantages__title advantages__title--answer"> Нам есть, что вам<br>предложить! </h2>
           </div>
           <div class="advantages__list">
               <div class="advantages__item">
                 <h3 class="advantages__item-title">Поднимает настроение</h3>
-                <p class="advantages__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию<br>буквально в несколько кликов!</p>
+                <p class="advantages__item-descr">Приложение позволит вам победить<br>осеннюю хандру и депрессию<br>буквально в несколько кликов!</p>
               </div>
               <div class="advantages__item">
                 <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-                <p class="advantages__item-descr">Сделайте снимок и украсьте его<br>смайликом или текстовой подписью,<br>чтобы усилить эффект</p>
+                <p class="advantages__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </div>
-              <div class="advantages__item">
+              <div class="advantages__item fuf">
                 <h3 class="advantages__item-title">Заводит новых друзей</h3>
-                <p class="advantages__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите<br>новых</p>
+                <p class="advantages__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
               </div>
             <div class="advantages__image"></div>
           </div>
-        </div>
+          <div class="advantages__24-hours"></div>
       </section>
 
       <section class="reviews">
-        <div class="container">
-          <div class="reviews__list slider">
-            <blockquote class="reviews__item slider__item">
-              <h3 class="reviews__auhor‐name">Николай Петров</h3>
-              <p class="reviews__authot-text">«Это приложение перевернуло<br>и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </div>
+        <div class="reviews__item slider__item">
+          <h3 class="reviews__auhor‐name">Николай Петров</h3>
+          <p class="reviews__authot-text">«Это приложение перевернуло мой мири позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
       </section>
 
@@ -113,7 +108,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="footer__top-part container">
         <div class="page-footer__title">
           <h2 class="page-footer__title-contacts">Остались вопросы?<br>Свяжитесь с нами!</h2>
         </div>
@@ -129,14 +124,28 @@
             </li>
             <li class="page-footer__item">
               <h3 class="page-footer__item-title--visit">Приезжайте в гости:</h3>
-              <h2 class="page-footer__item-descr">ул. Большая Конюшенная, 19/8</h2>
+              <h2 class="page-footer__item-descr">ул. Большая<br>Конюшенная, 19/8</h2>
             </li>
           </ul>
         </div>
-        <div class="page-footer__location">
-          <div class="page-footer__map"></div>
-          <div class="page-footer__point"></div>
+      </div>
+      <div class="page-footer__location">
+        <div class="page-footer__map"></div>
+        <div class="page-footer__point"></div>
+      </div>
+      <div class="footer__bottom-part container">
+        <div class="footer__bottom-item footer-logo">
+          <a href="index.html"></a>
         </div>
+        <section class="footer__bottom-item page-footer__social-btn">
+          <a class="page-footer__btn-item page-footer__btn-item--tw" href="#"></a>
+          <a class="page-footer__btn-item page-footer__btn-item--fb" href="#"></a>
+          <a class="page-footer__btn-item page-footer__btn-item--yt" href="#"></a>
+        </section>
+        <section class="footer__bottom-item page-footer__copyright">
+          <p class="page-footer__copyright-item page-footer__copyright-title">Разработано</p>
+          <a class="page-footer__copyright-item page-footer__copyright-btn" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </section>
       </div>
     </footer>
   </body>

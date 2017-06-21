@@ -14,6 +14,14 @@
 	margin-bottom: 33px;
 }
 
+.form-titl__text span { 
+	display: none;
+}
+
+.form-title-fill {
+	display: none;
+}
+
 fieldset {
 	border: none;
 }
@@ -23,7 +31,7 @@ fieldset {
 }
 
 .competition__person-name label {
-	margin-left: 28px;
+	margin-left: 9px;
 	margin-bottom: 20px;
 	.title;
 }
@@ -32,7 +40,7 @@ input[class="competition__person-data"] {
 	.inline-block;
 	padding: 18px 21px;
 	width: 235px;
-	margin-left: 6px;
+	margin-left: -13px;
 	margin-top: 11px;
 	margin-bottom: 23px;
 	background: none;
@@ -43,8 +51,8 @@ input[class="competition__person-data"] {
 .competition__achievements {
 	display: block;
 	background-color: @bg-color-grey;
-	padding: 36px 0;
-	padding-top: 36px;
+	opacity: 0.5;
+	padding: 0;
 	padding-bottom: 21px;
 	margin-bottom: 32px;
 }
@@ -53,12 +61,13 @@ input[class="competition__person-data"] {
 	.title;
 	.text-center;
 	margin-bottom: 17px;
+	padding-top: 37px;
 }
 
 .competition__achievements label {
 	.text;
 	margin-bottom: 58px;
-	padding-left: 88px;
+	padding-left: 68px;
 	line-height: 82px;
 }
 
@@ -75,28 +84,34 @@ input[class="competition__travel-app-item"] {
 	margin-bottom: 10px;
 }
 
+.competition__contacts-info {
+	display: none;
+}
+
 .competition__contacts label{
 	.title;
-	margin-left: 30px;
+	margin-left: 9px;
 }
 
 .competition__travel-app {
 	display: block;
 	background: @bg-color-grey;
-	padding: 37px 30px;
+	opacity: 0.5;
+	padding: 0px 30px;
 	padding-bottom: 24px;
-	margin-bottom: 31px;
+	margin-bottom: 36px;
 }
 
 .competition__travel-app-title {
 	.title;
 	.text-center;
 	margin-bottom: 16px;
+	padding-top: 37px;
 }
 
 .competition__travel-app label {
 	.text;
-	padding-left: 58px;
+	padding-left: 38px;
 	line-height: 75px;
 }
 
@@ -104,19 +119,18 @@ input[class="competition__travel-app-item"] {
 	margin-bottom: 13px;
 }
 
-.competition__comment-title {
+.competition__comment legend {
 	.title;
 	.text-center;
-	margin-left: 55px;
 }
 
 .competition__comment-item {
 	border: 2px solid @bg-color-grey;
 	width: 272px;
 	height: 193px;
-	margin-left: 7px;
 	margin-top: 16px;
-	margin-bottom: 44px;
+	margin-bottom: 38px;
+	margin-left: -15px;
 }
 
 input[class="competition__comment-btn"] {
@@ -125,7 +139,7 @@ input[class="competition__comment-btn"] {
 	border-radius: 2px;
 	color: #ffffff;
 	text-transform: uppercase;
-	margin-left: 7px;
+	margin-left: 1px;
 	width: 280px;
 	height: 63px;
 	margin-bottom: 30px;
@@ -135,7 +149,7 @@ input[class="competition__comment-btn"] {
 .competition__required-fields {
 	.title;
 	color: @bg-color-blue;
-	margin-left: 70px;
+	margin-left: 49px;
 	margin-bottom: 61px;
 }
 
@@ -143,6 +157,234 @@ input[class="competition__comment-btn"] {
 	color: @bg-color-red;
 	font-size: 14px;
 	line-height: 10px;
+}
+
+@media @tablet-widths {
+	.form-title {
+	  padding: 0 30px;
+	  background-color: green;
+      opacity: 0.6;
+      margin-bottom: 55px;
+	}
+
+	.form-title__text span {
+		display: inline-block;
+	}
+
+	.form-title-fill {
+	  display: inline-block;
+	}
+
+	.competition__form {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+
+	.competition__person-name {
+	  background-color: blue;
+	  opacity: 0.6;
+	  order: -3;
+	  margin-bottom: 3px;
+	}
+
+	.competition__person-name label {
+	  background-color: yellow;
+	  opacity: 0.6;
+	  margin-left: -14px;
+	  margin-right: 32px;
+	  .title;
+    }
+
+	input[class="competition__person-data"] {
+	  width: 466px;
+	  margin-bottom: 42px;
+    }
+
+    .competition__achievements {
+	  margin-bottom: 50px;
+	  background-color: red;
+	  opacity: 0.7;
+	}
+
+	.competition__achievements-title {
+	  margin-bottom: 22px;
+	}
+
+	.competition__achievements label {
+	  float: left;
+	  width: 300px;
+	  padding-left: 117px;
+	  margin-bottom: 0px;
+	}
+
+	.competition__contacts {
+	  .rel;
+	  order: -1;
+	  margin-bottom: 19px;
+	  background-color: blue; 
+	  opacity: 0.6;
+	  padding-right: 38px;
+	  padding-bottom: 10px;
+	}
+
+	.competition__contacts legend {
+	  .text;
+	  .text-center;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+
+	.competition__contacts input[class="competition__person-data"] {
+		width: 458px;
+		margin-left: 46px;
+		margin-right: 21px;
+		margin-bottom: 59px;
+	}
+
+	.competition__contacts label {
+		.abs;
+		padding-top: 89px;
+		padding-left: 56px;
+	}
+
+	.competition__contacts-info {
+	  display: none;
+	}
+
+	.competition__contacts label{
+	  .title;
+	  margin-left: 9px;
+	}
+
+	.competition__travel-app {
+	  order: -2;
+	  background: red;
+	  opacity: 0.5;
+	  padding: 0px 41px;
+	  margin-top: -35px;
+	  padding-bottom: 25px;
+	  margin-bottom: 52px;
+	}
+
+	.competition__travel-app legend {
+		padding-bottom: 10px;
+	}
+
+	.competition__travel-app label {
+	  float: left;
+	  width: 257px;
+	  .text;
+	  padding-left: 77px;
+	}
+
+	.competition__comment {
+		background-color: blue;
+		opacity: 0.6;
+		margin-bottom: 68px;
+		padding-right: 63px;
+	}
+
+	.competition__comment legend {
+	  .title;
+	  margin-left: 170px;
+	  margin-bottom: 14px;
+	}
+
+    .competition__comment-item {
+	  border: 2px solid @bg-color-grey;
+	  width: 488px;
+	  height: 186px;
+	  margin-left: 46px;
+	}
+
+	input[class="competition__comment-btn"] {
+	    float: left;
+		width: 300px;
+		margin-right: 87px;
+	}
+
+	.competition__required-fields {
+	  float: left;
+	  .title;
+	  color: @bg-color-blue;
+	  margin-top: 24px;
+	  margin-bottom: 70px;
+	}
+}
+
+@media @desktop-widths {
+	.form-title {
+	  padding: 0 70px;
+	  margin-bottom: 68px;
+	}
+
+	.competition__person-name {
+	  width: 425px;
+	  background-color: orange;
+	  opacity: 0.5;
+	  margin-right: 52px;
+	}
+
+	input[class="competition__person-data"] {
+	  width: 296px;
+    }
+
+    .competition__travel-app {
+      width: 200px;
+    }
+
+    .competition__achievements {
+	  margin-bottom: 56px;
+	  padding-left: 10px;
+	}
+
+	.competition__achievements label {
+	  width: 200px;
+	  padding-left: 106px;
+	  margin-bottom: 0px;
+	}
+
+	.competition__contacts {
+	  height: 156px;
+	  margin-bottom: 20px;
+	  padding-bottom: 12px;
+	}
+
+	.competition__contacts legend {
+	  margin-bottom: 16px;
+	}
+
+	.competition__contacts input[class="competition__person-data"] {
+		width: 330px;
+	}
+
+	.competition__travel-app label {
+	  padding-left: 94px;
+	}
+
+	.competition__comment {
+		margin-bottom: 65px;
+	}
+
+    .competition__comment-item {
+	  width: 810px;
+	  height: 119px;
+	  margin-left: 46px;
+	  margin-bottom: 31px;
+	}
+
+	input[class="competition__comment-btn"] {
+		width: 300px;
+		margin-right: 300px;
+	}
+
+	.competition__required-fields {
+	  .title;
+	  color: @bg-color-blue;
+	  margin-left: 49px;
+	  margin-top: 24px;
+	}
+
 }
 
 
